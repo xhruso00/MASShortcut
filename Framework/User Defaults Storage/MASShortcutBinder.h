@@ -62,6 +62,6 @@
  keyboard shortcuts. The shortcuts will be transformed according to
  `bindingOptions` and registered using `registerDefaults`.
 */
-- (void) registerDefaultShortcuts: (NSDictionary*) defaultShortcuts;
+- (void) registerDefaultShortcuts: (NSDictionary<NSString*,id>*) defaultShortcuts;
 
 @end

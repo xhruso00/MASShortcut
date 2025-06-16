@@ -62,7 +62,7 @@ static void *MASObservingContext = &MASObservingContext;
 // Handle changes in user defaults. We have to check keyPath here to see which of the
 // two checkboxes was changed. This is not very elegant, in practice you could use something
 // like https://github.com/facebook/KVOController with a nicer API.
-- (void) observeValueForKeyPath: (NSString*) keyPath ofObject: (id) object change: (NSDictionary*) change context: (void*) context
+- (void) observeValueForKeyPath: (NSString*) keyPath ofObject: (id) object change: (NSDictionary<NSKeyValueChangeKey,id>*) change context: (void*) context
 {
     if (context != MASObservingContext) {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];

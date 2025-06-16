@@ -61,7 +61,7 @@
     [self unbind:defaultsKeyName];
 }
 
-- (void) registerDefaultShortcuts: (NSDictionary*) defaultShortcuts
+- (void) registerDefaultShortcuts: (NSDictionary<NSString*,id>*) defaultShortcuts
 {
     NSValueTransformer *transformer = [_bindingOptions valueForKey:NSValueTransformerBindingOption];
     if (transformer == nil) {

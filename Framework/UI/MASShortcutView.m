@@ -540,12 +540,12 @@ void *kUserDataHint = &kUserDataHint;
     NSParameterAssert(binding != nil);
 
     //WARNING: bindingInfo contains NSNull, so it must be accounted for
-    NSDictionary* bindingInfo = [self infoForBinding:binding];
+    NSDictionary<NSBindingInfoKey,id>* bindingInfo = [self infoForBinding:binding];
     if(!bindingInfo)
         return; //there is no binding
 
     //apply the value transformer, if one has been set
-    NSDictionary* bindingOptions = [bindingInfo objectForKey:NSOptionsKey];
+    NSDictionary<NSBindingInfoKey,id>* bindingOptions = [bindingInfo objectForKey:NSOptionsKey];
     if(bindingOptions){
         NSValueTransformer* transformer = [bindingOptions valueForKey:NSValueTransformerBindingOption];
         if(!transformer || (id)transformer == [NSNull null]){
