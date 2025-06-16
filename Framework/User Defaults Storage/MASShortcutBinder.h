@@ -33,7 +33,7 @@
 
  As an example, you can use `NSValueTransformerNameBindingOption` to customize
  the storage format used for the shortcuts. By default the shortcuts are converted
- from `NSData` (`NSKeyedUnarchiveFromDataTransformerName`). Note that if the
+ from `NSData` (`NSSecureUnarchiveFromDataTransformerName`). Note that if the
  binder is to work with `MASShortcutView`, both object have to use the same storage
  format.
 */

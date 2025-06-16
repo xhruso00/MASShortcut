@@ -10,7 +10,7 @@ extern NSString *const MASDictionaryTransformerName;
  `NSDictionary`. In Cocoa Bindings, the conversion can be done
  using value transformers like this one.
 
- There’s a built-in transformer (`NSKeyedUnarchiveFromDataTransformerName`)
+ There’s a built-in transformer (`NSSecureUnarchiveFromDataTransformerName`)
  that converts any `NSCoding` types to `NSData`, but with shortcuts
  it makes sense to use a dictionary instead – the defaults look better
  when inspected with the `defaults` command-line utility and the
