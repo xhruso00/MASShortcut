@@ -1,5 +1,5 @@
-#import "MASLocalization.h"
-#import "MASShortcut.h"
+#import <MASShortcut/MASLocalization.h>
+#import <MASShortcut/MASShortcut.h>
 
 static NSString *const MASLocalizationTableName = @"Localizable";
 static NSString *const MASPlaceholderLocalizationString = @"XXX";

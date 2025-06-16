@@ -1,4 +1,4 @@
-#import "MASHotKey.h"
+#import <MASShortcut/MASHotKey.h>
 
 FourCharCode const MASHotKeySignature = 'MASS';
 

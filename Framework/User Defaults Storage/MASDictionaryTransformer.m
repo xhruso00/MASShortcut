@@ -1,5 +1,5 @@
-#import "MASDictionaryTransformer.h"
-#import "MASShortcut.h"
+#import <MASShortcut/MASDictionaryTransformer.h>
+#import <MASShortcut/MASShortcut.h>
 
 NSString *const MASDictionaryTransformerName = @"MASDictionaryTransformer";
 

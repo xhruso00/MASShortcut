@@ -1,5 +1,5 @@
-#import "MASShortcut.h"
-#import "MASLocalization.h"
+#import <MASShortcut/MASShortcut.h>
+#import <MASShortcut/MASLocalization.h>
 
 static NSString *const MASShortcutKeyCode = @"KeyCode";
 static NSString *const MASShortcutModifierFlags = @"ModifierFlags";
